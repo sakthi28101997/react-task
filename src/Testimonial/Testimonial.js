@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {backendUrl } from '../api/Url';
 import SingleTestimonial from './SingleTestimonial/SingleTestimonial';
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
@@ -13,7 +11,7 @@ function Testimonial() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch(backendUrl +"api/testimonial/list")
+    fetch(process.env.backendUrl +"api/testimonial/list")
       .then(res => res.json())
       .then(
         (result) => {
