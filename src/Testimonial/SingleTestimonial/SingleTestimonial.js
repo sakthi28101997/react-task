@@ -5,7 +5,7 @@ function SingleTestimonial({email , photo ,name ,post,description}) {
    
 <div className="single-testimonial mt-30 mb-30 text-center">
 <div className="testimonial-image">
-<img src={ photo ? process.env.backendUrl + photo : defautImage} alt="Author" style={{width:"90px"}} />
+<img src={ photo ? process.env.backendUrl + photo : process.env.defautImage} alt="Author" style={{width:"90px"}} />
 </div>
 <div className="testimonial-content">
 <p className="text">{description}</p>
