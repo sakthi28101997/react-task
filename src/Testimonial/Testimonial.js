@@ -11,7 +11,7 @@ function Testimonial() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch(process.env.backendUrl +"api/testimonial/list")
+    fetch(process.env.REACT_APP_BACKEND_URL +"api/testimonial/list")
       .then(res => res.json())
       .then(
         (result) => {
