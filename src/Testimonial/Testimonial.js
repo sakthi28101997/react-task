@@ -50,7 +50,7 @@ function Testimonial() {
               <div className="col-lg-12">
               <div className="row testimonial-active">
               {
-                 items.map(item => (
+                 items?.map(item => (
                   <div className='col-md-4' key={item.id}>
                       <SingleTestimonial 
                       email={item.email}
